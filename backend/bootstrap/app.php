@@ -15,6 +15,7 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $middleware->alias([
             'sanctum' => EnsureFrontendRequestsAreStateful::class,
+            'role' => \App\Http\Middleware\RoleMiddleware::class,
         ]);
         
     })
