@@ -18,6 +18,7 @@ Route::middleware(['auth:sanctum', 'role:SUPER_ADMIN'])->get('/admin-only', func
         'message' => 'Welcome, Super Admin'
     ]);
 });
+
 //test route
 Route::middleware(['auth:sanctum', 'role:ADMIN'])
     ->get('/admin-test', function () {
