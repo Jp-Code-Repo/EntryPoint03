@@ -6,6 +6,8 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+use App\Enums\Role;
+
 class RoleMiddleware
 {
     public function handle(Request $request, Closure $next, ...$roles): Response
